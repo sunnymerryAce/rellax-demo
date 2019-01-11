@@ -1,0 +1,35 @@
+extends ../partial/layout.pug
+
+block vars
+  - var date        = Date.now();
+  - var bodyClass   = ''
+  - var title       = 'title insert here'
+  - var description = ''
+  - var keywords    = ''
+  - var url         = ''
+  - var ogimage     = ''
+  - var site_name   = ''
+  - var style       = './css/style.css?version=' + date
+
+block script
+  script(charset="UTF-8" defer src='./js/vendor.bundle.js?version=' + date)
+  script(charset='UTF-8' defer src='./js/index.bundle.js?version=' + date)
+
+
+block contents
+  main#main(role='main')
+    section.parallax
+      .ball.ball1.rellax(data-rellax-speed='-7')
+      .ball.ball2.rellax(data-rellax-speed='1')
+      .ball.ball3.rellax(data-rellax-speed='10')
+      .ball.ball4.rellax(data-rellax-speed='5')
+    section.parallax
+      .ball.ball1.rellax(data-rellax-speed='-7')
+      .ball.ball2.rellax(data-rellax-speed='1')
+      .ball.ball3.rellax(data-rellax-speed='10')
+      .ball.ball4.rellax(data-rellax-speed='5')
+    section.parallax
+      .ball.ball1.rellax(data-rellax-speed='-7')
+      .ball.ball2.rellax(data-rellax-speed='1')
+      .ball.ball3.rellax(data-rellax-speed='10')
+      .ball.ball4.rellax(data-rellax-speed='5')
